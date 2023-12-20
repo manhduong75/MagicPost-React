@@ -22,8 +22,13 @@ const Login = () => {
           <div className="content-right col-12 col-sm-5 d-flex flex-column gap-3 py-3">
             <div className="brand d-sm-none">Magic Post</div>
             <div className="form-group d-flex flex-row">
-              <FontAwesomeIcon icon={faUser} className="my-icon" />
+              <label for="username">
+                {" "}
+                <FontAwesomeIcon icon={faUser} className="my-icon" />
+              </label>
+
               <input
+                id="username"
                 type="text"
                 placeholder="Username"
                 className="form-control"
@@ -31,8 +36,12 @@ const Login = () => {
             </div>
 
             <div className="form-group d-flex flex-row">
-              <FontAwesomeIcon icon={faLock} className="my-icon" />
+              <label for="password">
+                {" "}
+                <FontAwesomeIcon icon={faLock} className="my-icon" />
+              </label>
               <input
+                id="password"
                 type="password"
                 placeholder="Password"
                 className="form-control"

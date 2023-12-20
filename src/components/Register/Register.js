@@ -29,40 +29,55 @@ const Register = () => {
           <div className="content-right col-12 col-sm-5 d-flex flex-column gap-3 py-3">
             <div className="brand ">CREATE AN ACCOUNT</div>
             <div className="form-group d-flex flex-row">
-              <FontAwesomeIcon icon={faEnvelope} className="my-icon" />
+              <label for="email">
+                <FontAwesomeIcon icon={faEnvelope} className="my-icon" />
+              </label>
               <input
                 type="text"
+                id="email"
                 placeholder="Your Email"
                 className="form-control"
               />
             </div>
             <div className="form-group d-flex flex-row">
-              <FontAwesomeIcon icon={faPhone} className="my-icon" />
+              <label for="phone">
+                <FontAwesomeIcon icon={faPhone} className="my-icon" />
+              </label>
               <input
+                id="phone"
                 type="text"
                 placeholder="Your phone number"
                 className="form-control"
               />
             </div>
             <div className="form-group d-flex flex-row">
-              <FontAwesomeIcon icon={faUser} className="my-icon" />
+              <label for="username">
+                <FontAwesomeIcon icon={faUser} className="my-icon" />
+              </label>
               <input
+                id="username"
                 type="text"
                 placeholder="Username"
                 className="form-control"
               />
             </div>
             <div className="form-group d-flex flex-row">
-              <FontAwesomeIcon icon={faLock} className="my-icon" />
+              <label for="password">
+                <FontAwesomeIcon icon={faLock} className="my-icon" />
+              </label>
               <input
+                id="password"
                 type="password"
                 placeholder="Password"
                 className="form-control"
               />
             </div>
             <div className="form-group d-flex flex-row">
-              <FontAwesomeIcon icon={faKey} className="my-icon" />
+              <label for="repeat-password">
+                <FontAwesomeIcon icon={faKey} className="my-icon" />
+              </label>
               <input
+                id="repeat-password"
                 type="password"
                 placeholder="Repeat your password"
                 className="form-control"
